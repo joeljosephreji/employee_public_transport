@@ -1,6 +1,6 @@
+import 'package:employee_public_transport/screens/login/login.dart';
 import 'package:flutter/material.dart';
 import 'style.dart';
-import 'screens/registration/registration.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
           textTheme: TextTheme(title: AppBarTextStyle),
         ),
       ),
-      home: Registration(),
+      home: Login(),
       debugShowCheckedModeBanner: false,
     );
   }

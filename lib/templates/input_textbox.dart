@@ -1,4 +1,3 @@
-import 'package:employee_public_transport/templates/text_field_decorator.dart';
 import 'package:flutter/material.dart';
 
 class InputTextbox extends StatelessWidget {
@@ -15,7 +14,15 @@ class InputTextbox extends StatelessWidget {
         TextField(
           controller: _controller,
           keyboardType: _keyboardType,
-          decoration: textFieldDecorator(_text),
+          decoration: InputDecoration(
+              labelText: _text,
+              labelStyle: TextStyle(
+                fontFamily: 'Montserrat',
+                fontWeight: FontWeight.bold,
+                color: Colors.grey,
+              ),
+              focusedBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.green))),
         ),
         SizedBox(height: 10.0),
       ],
