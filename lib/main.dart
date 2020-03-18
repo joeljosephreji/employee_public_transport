@@ -1,4 +1,5 @@
 import 'package:employee_public_transport/screens/login/login.dart';
+import 'package:employee_public_transport/screens/registration/registration.dart';
 import 'package:flutter/material.dart';
 import 'style.dart';
 
@@ -17,6 +18,9 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: Login(),
+      routes: {
+        '/signup': (context) => new Registration(),
+      },
       debugShowCheckedModeBanner: false,
     );
   }
