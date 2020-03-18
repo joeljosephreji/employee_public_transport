@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'style.dart';
 import 'screens/registration/registration.dart';
 
 void main() => runApp(MyApp());
@@ -9,7 +10,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
+        fontFamily: 'Monserrat',
+        appBarTheme: AppBarTheme(
+          textTheme: TextTheme(title: AppBarTextStyle),
+        ),
       ),
       home: Registration(),
       debugShowCheckedModeBanner: false,

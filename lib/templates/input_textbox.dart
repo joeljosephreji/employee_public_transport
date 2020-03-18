@@ -17,7 +17,7 @@ class InputTextbox extends StatelessWidget {
           keyboardType: _keyboardType,
           decoration: textFieldDecorator(_text),
         ),
-        SizedBox(height:10.0),
+        SizedBox(height: 10.0),
       ],
     );
   }
