@@ -17,7 +17,7 @@ class Login extends StatelessWidget {
         children: <Widget>[
           InputTextbox('EMAIL', email, TextInputType.emailAddress),
           InputTextbox('PASSWORD', password, TextInputType.text),
-          SubmitButton('LOG IN', () {
+          SubmitButton('SIGN IN', () {
             // something
             print("hello world");
           }),
