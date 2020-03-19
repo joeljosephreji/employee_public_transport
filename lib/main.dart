@@ -1,6 +1,7 @@
 import 'package:employee_public_transport/screens/login/login.dart';
 import 'package:employee_public_transport/screens/registration/registration.dart';
 import 'package:flutter/material.dart';
+
 import 'style.dart';
 
 void main() => runApp(MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         fontFamily: 'Monserrat',
         appBarTheme: AppBarTheme(
-          textTheme: TextTheme(title: AppBarTextStyle),
+          textTheme: TextTheme(headline6: AppBarTextStyle),
         ),
       ),
       home: Login(),
