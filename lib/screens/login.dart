@@ -18,6 +18,7 @@ class Login extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Login"),
+        backgroundColor: Colors.green,
       ),
       body: ListView(
         padding: EdgeInsets.only(top: 25.0, left: 20.0, right: 20.0),
@@ -38,8 +39,8 @@ class Login extends StatelessWidget {
                 var name = res.about['data']['name'];
                 // print(token);
                 prefs.setString('USER_TOKEN', token);
-                prefs.setString('__UID', res.about['comment'].toString());
-                prefs.setString('__UNAME', name);
+                prefs.setString('__EID', res.about['comment'].toString());
+                prefs.setString('__ENAME', name);
                 Navigator.pushNamed(context, '/home', arguments: name);
               } else {
                 await showAlertBox(context, "Unsucessful Login",

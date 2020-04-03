@@ -9,7 +9,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SharedPreferences prefs = await SharedPreferences.getInstance();
-  var id = prefs.getString('__UID');
+  var id = prefs.getString('__EID');
   print("IDDD");
   print(id);
   runApp(MaterialApp(

@@ -36,7 +36,7 @@ class ConfirmPage extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 10.0),
-              InputTextbox('EMAIL', otp, TextInputType.text, false),
+              InputTextbox('OTP', otp, TextInputType.text, false),
               SizedBox(height: 40.0),
               SubmitButton(
                 'VERIFY',
@@ -48,10 +48,12 @@ class ConfirmPage extends StatelessWidget {
                   var map = new Map<String, dynamic>();
                   map['otp'] = otp.text;
                   map['timestamp'] = timestamp.toIso8601String();
-                  map['id'] = id['data'].toString();
+                  map['employee_id'] = id['data'].toString();
                   var res = await verifyPost(map);
 
                   if (res != null) {
+                    print(res.about);
+                    print("xxx");
                     if (res.success) {
                       await showAlertBox(context, "SUCCESS :D",
                           'Press OK to move onto the LoginPage..!');

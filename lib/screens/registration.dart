@@ -20,6 +20,7 @@ class Registration extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Registration"),
+        backgroundColor: Colors.green,
       ),
       body: ListView(
         padding: EdgeInsets.only(top: 25.0, left: 20.0, right: 20.0),
