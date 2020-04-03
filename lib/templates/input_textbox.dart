@@ -4,8 +4,9 @@ class InputTextbox extends StatelessWidget {
   final String _text;
   final TextEditingController _controller;
   final TextInputType _keyboardType;
+  final bool _obscure;
 
-  InputTextbox(this._text, this._controller, this._keyboardType);
+  InputTextbox(this._text, this._controller, this._keyboardType, this._obscure);
 
   @override
   Widget build(BuildContext context) {
@@ -14,6 +15,7 @@ class InputTextbox extends StatelessWidget {
         TextField(
           controller: _controller,
           keyboardType: _keyboardType,
+          obscureText: _obscure,
           decoration: InputDecoration(
               labelText: _text,
               labelStyle: TextStyle(
