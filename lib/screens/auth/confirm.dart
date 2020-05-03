@@ -14,14 +14,7 @@ class ConfirmPage extends StatelessWidget {
     TextEditingController otp = new TextEditingController();
 
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.green,
-          title: Text('CONFIRM',
-              style: TextStyle(
-                  color: Colors.white,
-                  fontFamily: 'Montserrat',
-                  fontWeight: FontWeight.bold)),
-        ),
+        appBar: AppBar(title: Text('Confirm')),
         body: Container(
           padding: EdgeInsets.all(20),
           child: Column(
@@ -31,7 +24,6 @@ class ConfirmPage extends StatelessWidget {
               Text(
                 "Enter the otp sent to your mail-ID for confirming your registration..!",
                 style: TextStyle(
-                  fontFamily: 'Montserrat',
                   fontWeight: FontWeight.w600,
                 ),
               ),

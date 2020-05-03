@@ -16,13 +16,7 @@ class Login extends StatelessWidget {
     TextEditingController _password = new TextEditingController();
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "KSRTC Admin Login",
-          style: TextStyle(fontFamily: 'Montserrat'),
-        ),
-        backgroundColor: Colors.green,
-      ),
+      appBar: AppBar(title: Text("KSRTC Employee Login")),
       body: ListView(
         padding: EdgeInsets.only(top: 25.0, left: 20.0, right: 20.0),
         children: <Widget>[
@@ -76,10 +70,7 @@ class Login extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text(
-                'New to the community ?',
-                style: TextStyle(fontFamily: 'Montserrat'),
-              ),
+              Text('New to the community ?'),
               SizedBox(width: 5.0),
               InkWell(
                 onTap: () {
@@ -88,7 +79,6 @@ class Login extends StatelessWidget {
                 child: Text(
                   'Register',
                   style: TextStyle(
-                      fontFamily: 'Montserrat',
                       fontWeight: FontWeight.bold,
                       color: Colors.green,
                       decoration: TextDecoration.underline),

@@ -39,11 +39,7 @@ class _EmployeeHomeState extends State<EmployeeHome> {
     return new Scaffold(
       resizeToAvoidBottomPadding: false,
       appBar: AppBar(
-        title: Text(
-          'Admin',
-          style: TextStyle(fontFamily: 'Montserrat'),
-        ),
-        backgroundColor: Colors.green,
+        title: Text('Admin'),
         automaticallyImplyLeading: false,
         actions: <Widget>[
           InkWell(
@@ -68,10 +64,7 @@ class _EmployeeHomeState extends State<EmployeeHome> {
           Center(
             child: Text(
               "LET'S START THE BUS..!",
-              style: TextStyle(
-                  fontFamily: 'Montserrat',
-                  fontWeight: FontWeight.w700,
-                  fontSize: 16),
+              style: TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
             ),
           ),
           SizedBox(
@@ -100,15 +93,17 @@ class _EmployeeHomeState extends State<EmployeeHome> {
             map['routeNo'] = "0101-32";
 
             var res = await startBus(map);
-            print(res.about);
             if (res != null) {
               if (res.success) {
                 SharedPreferences prefs = await SharedPreferences.getInstance();
                 prefs.setBool('__CHECK', true);
+                prefs.setString('__RID', "0101-32");
+
                 await showAlertBox(context, 'SUCCESS',
                     'Successfully added to live buses..:) Press OK to continue..!');
-                Navigator.pushNamed(context, '/livebus',
-                    arguments: res.about['data']);
+                // Navigator.pushNamed(context, '/livebus',
+                //     arguments: res.about['data']);
+                Navigator.of(context).pushNamed('/livebus');
 
                 //GOTO PAGE
               } else {

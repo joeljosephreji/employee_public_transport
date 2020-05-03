@@ -14,14 +14,12 @@ Future showAlertBox(BuildContext context, String title, String body) {
       child: new AlertDialog(
         title: new Text(title,
             style: TextStyle(
-                fontFamily: 'Montserrat',
                 color: _indic,
                 fontWeight: FontWeight.bold,
                 fontSize: 16)),
         content: new Text(
           body,
           style: TextStyle(
-              fontFamily: 'Montserrat',
               fontWeight: FontWeight.w500,
               fontSize: 15),
         ),

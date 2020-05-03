@@ -16,6 +16,7 @@ Future<void> main() async {
   print(id);
   print(ch);
   runApp(MaterialApp(
+    theme: ThemeData(fontFamily: 'Montserrat', primaryColor: Colors.green),
     home: id == null ? Login() : (ch == null ? EmployeeHome() : LiveBus()),
     // home: Login(),
     // home: ConfirmPage(),

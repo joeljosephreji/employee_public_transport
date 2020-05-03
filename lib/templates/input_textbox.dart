@@ -19,7 +19,6 @@ class InputTextbox extends StatelessWidget {
           decoration: InputDecoration(
               labelText: _text,
               labelStyle: TextStyle(
-                fontFamily: 'Montserrat',
                 fontWeight: FontWeight.bold,
                 color: Colors.grey,
               ),

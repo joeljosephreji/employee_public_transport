@@ -26,16 +26,13 @@ class AppDrawer extends StatelessWidget {
                     child: new AlertDialog(
                       title: new Text('CONFIRMATION',
                           style: TextStyle(
-                              fontFamily: 'Montserrat',
                               fontWeight: FontWeight.bold,
                               color: Colors.orange,
                               fontSize: 16)),
                       content: new Text(
                         'Are you sure that you want to end the trip ?',
                         style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontWeight: FontWeight.w500,
-                            fontSize: 15),
+                            fontWeight: FontWeight.w500, fontSize: 15),
                       ),
                       actions: <Widget>[
                         FlatButton(
@@ -63,16 +60,13 @@ class AppDrawer extends StatelessWidget {
                     child: new AlertDialog(
                       title: new Text('CONFIRMATION',
                           style: TextStyle(
-                              fontFamily: 'Montserrat',
                               color: Colors.orange,
                               fontWeight: FontWeight.bold,
                               fontSize: 16)),
                       content: new Text(
                         'Are you sure that you want to logout ?',
                         style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontWeight: FontWeight.w500,
-                            fontSize: 15),
+                            fontWeight: FontWeight.w500, fontSize: 15),
                       ),
                       actions: <Widget>[
                         FlatButton(

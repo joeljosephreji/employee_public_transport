@@ -8,16 +8,8 @@ class ForgotPassword extends StatefulWidget {
 class _ForgotPasswordState extends State<ForgotPassword> {
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'Forgot Password',
-          style:
-              TextStyle(fontFamily: 'Montserrat', fontWeight: FontWeight.bold),
-        ),
-        backgroundColor: Colors.green,
-      ),
+      appBar: AppBar(title: Text('Forgot Password')),
     );
   }
 }
